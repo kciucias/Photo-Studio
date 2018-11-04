@@ -1,0 +1,129 @@
+/* small phones: from 0 to 480px */
+/* small phones to small tablets from 481 to 767px */
+/* small tablets to big tablets from 768 to 1023px */
+/* big tablets to 1200px */
+@font-face { font-family: 'Gotham Rounded'; src: url(../vendor/GothamRounded-Bold.otf); }
+
+@font-face { font-family: 'Gotham Rounded Light'; src: url(../vendor/GothamRounded-Light.otf); }
+
+@font-face { font-family: 'Gotham Rounded Book'; src: url(../vendor/GothamRounded-Book.otf); }
+
+/*
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+*/
+body { margin: 0 auto; background-color: #dfe6e9; max-width: 1200px; font-family: Gotham Rounded; }
+
+.container { max-width: 1200px; width: 100%; margin: 0 auto; }
+
+.container-header { width: 758px; margin: 0 auto; }
+
+header { background: no-repeat url("../images/background.png"); background-size: cover; height: 745px; width: 100%; }
+
+@media (max-width: 576px) { header { height: auto; } }
+
+header ul { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; padding-top: 40px; margin-bottom: 0; }
+
+@media (max-width: 576px) { header ul { -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; } }
+
+header ul li { display: inline-block; }
+
+@media (max-width: 576px) { header ul li { padding-top: 10px; font-size: 24px; } }
+
+header ul li a { color: #fff; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.4px; text-decoration: none; }
+
+header .slogan { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; padding-top: 247px; }
+
+@media (max-width: 576px) { header .slogan { padding-top: 100px; } }
+
+header .slogan h1 { color: #fff; font-size: 36px; font-weight: 700; text-transform: uppercase; letter-spacing: 5.4px; margin-top: 0; margin-bottom: 0; }
+
+@media (max-width: 576px) { header .slogan h1 { font-size: 1rem; } }
+
+header .slogan h2 { color: #fff; font-size: 16px; font-weight: 500; letter-spacing: 2.4px; margin-bottom: 0; }
+
+header .slogan button { width: 166px; height: 49px; border-radius: 3px; border: #16a085; background-color: #159f85; color: #fff; text-transform: uppercase; margin-top: 26px; }
+
+header .icons { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; font-size: 22px; padding-bottom: 26px; padding-top: 205px; color: #fff; }
+
+header .icons i { padding-right: 16px; }
+
+.second { background: no-repeat url("../images/second.png"); background-size: cover; width: 100%; height: 494px; }
+
+.second div { -ms-flex-direction: column; flex-direction: column; display: -ms-flexbox; display: flex; padding-top: 113px; padding-left: 129px; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-line-pack: justify; align-content: space-between; }
+
+.second div h1 { color: #159f85; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.7px; text-transform: uppercase; margin-bottom: 47px; }
+
+.second div p { color: #373737; font-family: Gotham Rounded Book; font-size: 12px; font-weight: 400; line-height: 24px; letter-spacing: 1.8px; margin-bottom: 45px; margin-top: 0; }
+
+.second div button { width: 192px; height: 51px; border-radius: 3px; background-color: #16a085; color: #fff; font-size: 12px; font-weight: 700; line-height: 20px; text-transform: uppercase; letter-spacing: 1.8px; border: #159f85; }
+
+.third { background: #fff; width: 100%; height: 558px; display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; }
+
+.third .image-relative { position: absolute; top: 1388px; left: 432px; z-index: -1; }
+
+.third div { -ms-flex-direction: column; flex-direction: column; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin-right: 83px; }
+
+.third div h1 { color: #159f85; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.7px; text-transform: uppercase; margin-bottom: 44px; }
+
+.third div p { color: #373737; font-family: Gotham Rounded Book; font-size: 12px; font-weight: 400; line-height: 24px; letter-spacing: 1.8px; margin-top: 0; margin-bottom: 0; }
+
+.third div button { width: 192px; height: 51px; border-radius: 3px; background-color: #16a085; color: #fff; font-size: 12px; font-weight: 700; line-height: 20px; text-transform: uppercase; letter-spacing: 1.8px; border: #159f85; margin-top: 42px; }
+
+.fourth { background: no-repeat url("../images/Rettangolo_6.png"); width: 100%; height: 483px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; }
+
+.fourth div:nth-child(1) { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; -ms-flex-direction: column; flex-direction: column; padding-right: 82px; }
+
+.fourth div:nth-child(1) h3 { color: #373737; font-size: 16px; font-weight: 700; line-height: 20px; text-transform: uppercase; letter-spacing: 2.4px; margin-top: 31px; margin-bottom: 0; }
+
+.fourth div:nth-child(1) h4 { color: #373737; font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-align: center; margin-top: 24px; }
+
+.fourth div:nth-child(2) { padding-right: 24px; }
+
+.fifth { background: no-repeat url("../images/Livello_3.png"); width: 100%; height: 790px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; }
+
+.fifth h5 { color: #fff; font-size: 24px; font-weight: 700; text-transform: uppercase; letter-spacing: 3.6px; }
+
+.fifth .email-input { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; }
+
+.fifth .email-input input { width: 280px; height: 60px; border-radius: 3px 0 0 3px; background-color: #ffffff; border: #fff; padding: 0; }
+
+.fifth .email-input button { width: 63px; height: 60px; border-radius: 0 3px 3px 0; background-color: #16a085; border: #16a085; padding: 0; }
+
+.fifth .email-input i { color: #fff; font-size: 20px; }
+
+.fifth .email-input input:-ms-input-placeholder { color: #373737; font-size: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 2.4px; padding-left: 22px; }
+
+.fifth .email-input input::placeholder { color: #373737; font-size: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 2.4px; padding-left: 22px; }
+
+.sixth { background: #f5f6f7; height: 396px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.sixth h1 { color: #373737; font-size: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 0; }
+
+.sixth h2 { color: #373737; text-align: center; font-size: 12px; font-weight: 500; line-height: 22px; text-transform: uppercase; letter-spacing: 1.8px; margin-bottom: 0; margin-top: 16px; }
+
+.sixth .buttons { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; margin-top: 47px; }
+
+.sixth .buttons .store { width: 240px; height: 56px; border-radius: 3px 0 0 3px; background-color: #1abc9c; color: white; border: #1abc9c; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.4px; }
+
+.sixth .buttons .icon-store { width: 56px; height: 56px; border-radius: 0 3px 3px 0; background-color: #16a085; border: #16a085; }
+
+.sixth .buttons i { color: #fff; font-size: 24px; }
+
+.sixth .buttons button:nth-child(2) { margin-right: 26px; }
+
+footer { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; background: white; height: 131px; -ms-flex-align: center; align-items: center; }
+
+footer div:first-child { padding-left: 126px; }
+
+footer div:last-child { padding-right: 129px; }
+
+footer h3 { margin-bottom: 20px; color: #373737; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.1px; }
+
+footer p { color: black; width: 393px; height: 14px; color: #373737; font-size: 14px; font-weight: 700; letter-spacing: 2.1px; }
