@@ -2,57 +2,61 @@
 /* small phones to small tablets from 481 to 767px */
 /* small tablets to big tablets from 768 to 1023px */
 /* big tablets to 1200px */
+/* small phones: from 0 to 480px */
+/* small phones to small tablets from 481 to 767px */
+/* small tablets to big tablets from 768 to 1023px */
+/* big tablets to 1200px */
 @font-face { font-family: 'Gotham Rounded'; src: url(../vendor/GothamRounded-Bold.otf); }
 
 @font-face { font-family: 'Gotham Rounded Light'; src: url(../vendor/GothamRounded-Light.otf); }
 
 @font-face { font-family: 'Gotham Rounded Book'; src: url(../vendor/GothamRounded-Book.otf); }
 
-/*
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-size: 16px;
-	line-height: 1.7;
-}
+html { font-size: 62.5%; }
 
-*/
-body { margin: 0 auto; background-color: #dfe6e9; max-width: 1200px; font-family: Gotham Rounded; }
+body { margin: 0 auto; max-width: 120rem; font-family: Gotham Rounded; box-sizing: border-box; }
 
-.container { max-width: 1200px; width: 100%; margin: 0 auto; }
+*, *::after, *::before { margin: 0; padding: 0; box-sizing: inherit; }
 
-.container-header { width: 758px; margin: 0 auto; }
+.heading_primary { color: #fff; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; text-align: center; }
 
-header { background: no-repeat url("../images/background.png"); background-size: cover; height: 745px; width: 100%; }
+.heading_primary--main { font-size: 3.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: .54rem; margin-bottom: 1.5rem; }
+
+@media (max-width: 576px) { .heading_primary--main { font-size: 1rem; } }
+
+.heading_primary--sub { font-weight: 500; letter-spacing: .24rem; }
+
+.header-icons { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; font-size: 2.2rem; padding-bottom: 2.6rem; padding-top: 20.5rem; color: #fff; }
+
+.header-icons i { padding-right: 1.6rem; }
+
+div { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; }
+
+div .header_btn:link, div .header_btn:visited { text-align: center; text-transform: uppercase; border-radius: .3rem; text-decoration: none; color: #fff; border: #159f85; background-color: #159f85; margin-top: 2.6rem; cursor: pointer; padding: 1.5rem 4rem; width: 19.2rem; height: 5.1rem; font-size: 1.2rem; font-weight: 700; line-height: 2rem; letter-spacing: .18rem; display: inline-block; }
+
+div .header_btn:hover { transform: translateY(-3px); box-shadow: 0 1rem 2rem rgba(204, 204, 204, 0.2); }
+
+div .header_btn::after { transform: scaleX(1.4) scaleY(1.6); opacity: 0; }
+
+div .header_btn:active, div .header_btn:focus { outline: none; transform: translateY(-1px); box-shadow: 0 0.5rem 1rem rgba(204, 204, 204, 0.2); }
+
+header { background: no-repeat url("../images/background.png"); background-size: cover; height: 74.5rem; }
 
 @media (max-width: 576px) { header { height: auto; } }
 
-header ul { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; padding-top: 40px; margin-bottom: 0; }
+header ul { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; padding-top: 4rem; margin-left: 24.1rem; margin-right: 24.1rem; font-size: 1.6rem; }
 
 @media (max-width: 576px) { header ul { -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; } }
 
 header ul li { display: inline-block; }
 
-@media (max-width: 576px) { header ul li { padding-top: 10px; font-size: 24px; } }
+@media (max-width: 576px) { header ul li { padding-top: 1rem; font-size: 2.4rem; } }
 
-header ul li a { color: #fff; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.4px; text-decoration: none; }
+header ul li a { color: #fff; font-weight: 700; text-transform: uppercase; letter-spacing: .24rem; text-decoration: none; }
 
-header .slogan { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; padding-top: 247px; }
+header .header_text-box { padding-top: 24.7rem; }
 
-@media (max-width: 576px) { header .slogan { padding-top: 100px; } }
-
-header .slogan h1 { color: #fff; font-size: 36px; font-weight: 700; text-transform: uppercase; letter-spacing: 5.4px; margin-top: 0; margin-bottom: 0; }
-
-@media (max-width: 576px) { header .slogan h1 { font-size: 1rem; } }
-
-header .slogan h2 { color: #fff; font-size: 16px; font-weight: 500; letter-spacing: 2.4px; margin-bottom: 0; }
-
-header .slogan button { width: 166px; height: 49px; border-radius: 3px; border: #16a085; background-color: #159f85; color: #fff; text-transform: uppercase; margin-top: 26px; }
-
-header .icons { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; font-size: 22px; padding-bottom: 26px; padding-top: 205px; color: #fff; }
-
-header .icons i { padding-right: 16px; }
+@media (max-width: 576px) { header .header_text-box { padding-top: 10rem; } }
 
 .second { background: no-repeat url("../images/second.png"); background-size: cover; width: 100%; height: 494px; }
 
@@ -117,13 +121,3 @@ header .icons i { padding-right: 16px; }
 .sixth .buttons i { color: #fff; font-size: 24px; }
 
 .sixth .buttons button:nth-child(2) { margin-right: 26px; }
-
-footer { display: -ms-flexbox; display: flex; -ms-flex-pack: justify; justify-content: space-between; background: white; height: 131px; -ms-flex-align: center; align-items: center; }
-
-footer div:first-child { padding-left: 126px; }
-
-footer div:last-child { padding-right: 129px; }
-
-footer h3 { margin-bottom: 20px; color: #373737; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.1px; }
-
-footer p { color: black; width: 393px; height: 14px; color: #373737; font-size: 14px; font-weight: 700; letter-spacing: 2.1px; }

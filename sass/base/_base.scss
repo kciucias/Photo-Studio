@@ -1,0 +1,23 @@
+
+html {
+    // This defines what 1rem is 16px
+    font-size: 62.5%;
+    //? line-height: 1.7;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 120rem;
+	font-family: Gotham Rounded;
+	box-sizing: border-box;
+}
+
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+

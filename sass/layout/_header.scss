@@ -1,0 +1,46 @@
+header {
+	background: no-repeat url("../images/background.png");
+	background-size: cover;
+	height: 74.5rem;
+	@include phone {
+		height: auto;
+	}
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 4rem;
+		margin-left: 24.1rem;
+		margin-right: 24.1rem;
+		font-size: 1.6rem;
+		@include phone {
+			flex-direction: column;
+			justify-content: center;
+		}
+		li {
+			display: inline-block;
+			@include phone {
+				padding-top: 1rem;
+				font-size: 2.4rem;
+			}
+			a {
+				color: $color-white;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: .24rem;
+				text-decoration: none;
+			}
+		}
+	}
+	.header_text-box {
+		//display: flex;
+		//align-items: center;
+		padding-top: 24.7rem;
+		@include phone {
+			padding-top: 10rem;
+		}
+	}
+}
+
+

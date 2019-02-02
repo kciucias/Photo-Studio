@@ -1,0 +1,40 @@
+div {
+    display: flex;
+    justify-content: center;
+    .header_btn {
+        &:link,
+        &:visited {
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: .3rem;
+            text-decoration: none;
+            color: $color-white;
+            border: $color-green;
+            background-color: $color-green;
+            margin-top: 2.6rem;
+            cursor: pointer;
+            padding: 1.5rem 4rem;
+            width: 19.2rem;
+            height: 5.1rem;
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 2rem;
+            letter-spacing: .18rem;  
+            display: inline-block; 
+        }
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        }
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+        &:active,
+        &:focus {
+            outline: none;
+            transform: translateY(-1px);
+            box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        }
+    }
+}	
