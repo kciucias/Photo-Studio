@@ -1,17 +1,14 @@
-
 html {
-    // This defines what 1rem is 16px
+    box-sizing: border-box;
+    // This defines that 1rem is 16px
     font-size: 62.5%;
-    //? line-height: 1.7;
+
 }
 
 body {
-	margin: 0 auto;
-	max-width: 120rem;
-	font-family: Gotham Rounded;
-	box-sizing: border-box;
+    font-family: Gotham Rounded;
+    line-height: 1.6;
 }
-
 
 *,
 *::after,
@@ -20,4 +17,10 @@ body {
     padding: 0;
     box-sizing: inherit;
 }
+
+.flex-container {
+    max-width: 102.4rem;
+    margin: 0 auto;
+}
+
 

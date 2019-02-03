@@ -1,0 +1,14 @@
+.second {
+	background: no-repeat url("../images/second.png");
+	background-size: cover;
+	min-height: 100vh;
+	height: 47rem;
+	justify-content: center;
+	&_text-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		padding-top: 13rem;
+	}
+}
