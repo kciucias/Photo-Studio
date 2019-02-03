@@ -13,12 +13,14 @@
 		display: block;
 		font-weight: 500;
 		letter-spacing: .24rem;
+		margin-bottom: 3rem;
 	}
 } // add animation to h1
 
 
 .heading_secondary {
 	&--main {
+		display: block;
 		color: $color-green;
 		font-size: 1.8rem;
 		font-weight: 700;
@@ -28,6 +30,7 @@
 		margin-bottom: 5rem;
 	}
 	&--sub {
+		display: block;
 		color: $color-grey-light;
 		font-family: Gotham Rounded Book;
 		font-size: 1.2rem;

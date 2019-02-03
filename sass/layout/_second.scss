@@ -4,6 +4,7 @@
 	min-height: 100vh;
 	height: 47rem;
 	justify-content: center;
+	overflow: hidden;
 	&_text-box {
 		display: flex;
 		flex-direction: column;

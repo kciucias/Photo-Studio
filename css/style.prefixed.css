@@ -24,15 +24,19 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .heading_primary--main { display: block; font-size: 3.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: .54rem; margin-bottom: 1.5rem; }
 
-.heading_primary--sub { display: block; font-weight: 500; letter-spacing: .24rem; }
+.heading_primary--sub { display: block; font-weight: 500; letter-spacing: .24rem; margin-bottom: 3rem; }
 
-.heading_secondary--main { color: #159f85; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2.7px; text-transform: uppercase; margin-bottom: 5rem; }
+.heading_secondary--main { display: block; color: #159f85; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2.7px; text-transform: uppercase; margin-bottom: 5rem; }
 
-.heading_secondary--sub { color: #373737; font-family: Gotham Rounded Book; font-size: 1.2rem; font-weight: 400; line-height: 2.4rem; letter-spacing: 1.8px; margin-bottom: 5rem; }
+.heading_secondary--sub { display: block; color: #373737; font-family: Gotham Rounded Book; font-size: 1.2rem; font-weight: 400; line-height: 2.4rem; letter-spacing: 1.8px; margin-bottom: 5rem; }
 
 .u-center-text { text-align: center !important; }
 
-.btn, .btn:link, .btn:visited { text-align: center; text-transform: uppercase; border-radius: .3rem; text-decoration: none; border: none; margin-top: 3rem; cursor: pointer; padding: 2rem 3rem; font-size: 1.2rem; font-weight: 700; letter-spacing: .18rem; position: relative; display: inline-block; }
+.btn, .btn:link, .btn:visited { text-align: center; text-transform: uppercase; border-radius: .3rem; text-decoration: none; border: none; cursor: pointer; font-size: 1.2rem; font-weight: 700; letter-spacing: .18rem; position: relative; display: inline-block; }
+
+.btn--primary { padding: 2rem 3rem; }
+
+.btn--secondary { padding: 2.5rem 4.5rem; }
 
 .btn--green { background-color: #159f85; color: #fff; }
 
@@ -60,7 +64,7 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .header_text-box { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.second { background: no-repeat url("../images/second.png"); background-size: cover; min-height: 100vh; height: 47rem; -ms-flex-pack: center; justify-content: center; }
+.second { background: no-repeat url("../images/second.png"); background-size: cover; min-height: 100vh; height: 47rem; -ms-flex-pack: center; justify-content: center; overflow: hidden; }
 
 .second_text-box { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; padding-top: 13rem; }
 
