@@ -1,0 +1,48 @@
+.gallery {
+	padding: 0 13rem;
+	background-color: $color-grey-bcg;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 48.3rem;
+	position: relative;
+
+	&_text-box {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		flex-direction: column;
+		color: $color-grey-light;
+		.gallery_heading {			
+			font-family: Gotham Rounded;
+			font-family: 1.8rem;
+			line-height: 2rem;
+			text-transform: uppercase;
+			letter-spacing: .24rem;
+			margin-top: 2rem;
+		}
+		.gallery_paragraph {
+			font-size: 1rem;
+			font-family: Gotham Rounded Medium;
+			letter-spacing: .15rem;
+			text-align: center;
+			margin-top: 1.3rem;
+		}
+	}
+	
+	&-img {
+		height: 24rem;
+		width: 37rem;
+	}
+
+	&-img:nth-child(2) {
+			padding-right: 2.4rem;
+	}
+	.arrows {
+		position: absolute;
+		top: 9.5rem;
+		right: 13rem;
+	}
+}

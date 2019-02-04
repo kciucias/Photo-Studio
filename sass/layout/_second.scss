@@ -1,15 +1,19 @@
 .second {
 	background: no-repeat url("../images/second.png");
-	background-size: cover;
+	background-color: $color-grey-bcg;
 	min-height: 100vh;
 	height: 47rem;
 	justify-content: center;
-	overflow: hidden;
+ 
 	&_text-box {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 
 		padding-top: 13rem;
+	}
+	&_img {
+		position: absolute;
+		top: 50;
 	}
 }

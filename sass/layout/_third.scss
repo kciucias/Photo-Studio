@@ -1,0 +1,32 @@
+.third {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	background: $color-white;
+	min-height: 56rem;
+	overflow: hidden;
+	
+	&_img {
+		display: flex;
+
+
+		//position: absolute;
+		//left: 13rem;
+		//top: 15rem;
+	}
+
+	&_text-box {
+		display: flex;
+		.arrow {
+			font-size: 30px;
+			color: #000;
+			text-decoration: none;
+			line-height: 20px;
+			transition: .2s;
+			&:hover {
+			    text-decoration: none;
+			}
+		}
+	}
+}

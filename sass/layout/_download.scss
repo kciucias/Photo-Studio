@@ -1,0 +1,61 @@
+.sixth {
+	background: #f5f6f7;
+	height: 396px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		color: #373737;
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin-bottom: 0;
+	}
+	h2 {
+		color: #373737;
+		text-align: center;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 22px;
+		text-transform: uppercase;
+		letter-spacing: 1.8px;
+		margin-bottom: 0;
+		margin-top: 16px;
+	}
+	.buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 47px;
+		.store {
+			width: 240px;
+			height: 56px;
+			border-radius: 3px 0 0 3px;
+			background-color: #1abc9c;
+			color: white;
+			border: #1abc9c;
+			font-size: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 2.4px;
+		}
+		.icon-store {
+			width: 56px;
+			height: 56px;
+			border-radius: 0 3px 3px 0;
+			background-color: #16a085;
+			border: #16a085;
+		}
+		i {
+			color: #fff;
+			font-size: 24px;
+		}
+		button {
+			&:nth-child(2) {
+			margin-right: 26px;
+			}
+		}
+	}
+}

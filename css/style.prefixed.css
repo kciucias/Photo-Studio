@@ -12,6 +12,8 @@
 
 @font-face { font-family: 'Gotham Rounded Book'; src: url(../vendor/GothamRounded-Book.otf); }
 
+@font-face { font-family: 'Gotham Rounded Medium'; src: url(../vendor/GothamRounded-Medium.otf); }
+
 html { box-sizing: border-box; font-size: 62.5%; }
 
 body { font-family: Gotham Rounded; line-height: 1.6; }
@@ -48,6 +50,12 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .btn:active, .btn:focus { outline: none; transform: translateY(-1px); box-shadow: 0 0.5rem 1rem rgba(204, 204, 204, 0.2); }
 
+.arrow { font-size: 30px; text-decoration: none; line-height: 20px; transition: .2s; }
+
+.arrow:hover { color: #159f85; text-decoration: none; }
+
+.arrow_right { padding-left: 1.3rem; }
+
 .header { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: justify; justify-content: space-between; background: no-repeat url("../images/background.png"); background-size: cover; min-height: 100vh; background-position: center bottom; }
 
 .header nav { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; padding-top: 4.2rem; }
@@ -64,60 +72,32 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .header_text-box { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.second { background: no-repeat url("../images/second.png"); background-size: cover; min-height: 100vh; height: 47rem; -ms-flex-pack: center; justify-content: center; overflow: hidden; }
+.second { background: no-repeat url("../images/second.png"); background-color: #F5F6F7; min-height: 100vh; height: 47rem; -ms-flex-pack: center; justify-content: center; }
 
 .second_text-box { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; padding-top: 13rem; }
 
-.third { background: #fff; width: 100%; height: 558px; display: -ms-flexbox; display: flex; -ms-flex-pack: end; justify-content: flex-end; }
+.second_img { position: absolute; top: 50; }
 
-.third .image-relative { position: absolute; top: 1388px; left: 432px; z-index: -1; }
+.third { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; background: #fff; min-height: 56rem; overflow: hidden; }
 
-.third div { -ms-flex-direction: column; flex-direction: column; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin-right: 83px; }
+.third_img { display: -ms-flexbox; display: flex; }
 
-.third div h1 { color: #159f85; font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.7px; text-transform: uppercase; margin-bottom: 44px; }
+.third_text-box { display: -ms-flexbox; display: flex; }
 
-.third div p { color: #373737; font-family: Gotham Rounded Book; font-size: 12px; font-weight: 400; line-height: 24px; letter-spacing: 1.8px; margin-top: 0; margin-bottom: 0; }
+.third_text-box .arrow { font-size: 30px; color: #000; text-decoration: none; line-height: 20px; transition: .2s; }
 
-.third div button { width: 192px; height: 51px; border-radius: 3px; background-color: #16a085; color: #fff; font-size: 12px; font-weight: 700; line-height: 20px; text-transform: uppercase; letter-spacing: 1.8px; border: #159f85; margin-top: 42px; }
+.third_text-box .arrow:hover { text-decoration: none; }
 
-.fourth { background: no-repeat url("../images/Rettangolo_6.png"); width: 100%; height: 483px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; }
+.gallery { padding: 0 13rem; background-color: #F5F6F7; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; height: 48.3rem; position: relative; }
 
-.fourth div:nth-child(1) { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; -ms-flex-direction: column; flex-direction: column; padding-right: 82px; }
+.gallery_text-box { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-direction: column; flex-direction: column; color: #373737; }
 
-.fourth div:nth-child(1) h3 { color: #373737; font-size: 16px; font-weight: 700; line-height: 20px; text-transform: uppercase; letter-spacing: 2.4px; margin-top: 31px; margin-bottom: 0; }
+.gallery_text-box .gallery_heading { font-family: Gotham Rounded; font-family: 1.8rem; line-height: 2rem; text-transform: uppercase; letter-spacing: .24rem; margin-top: 2rem; }
 
-.fourth div:nth-child(1) h4 { color: #373737; font-size: 10px; font-weight: 500; letter-spacing: 1.5px; text-align: center; margin-top: 24px; }
+.gallery_text-box .gallery_paragraph { font-size: 1rem; font-family: Gotham Rounded Medium; letter-spacing: .15rem; text-align: center; margin-top: 1.3rem; }
 
-.fourth div:nth-child(2) { padding-right: 24px; }
+.gallery-img { height: 24rem; width: 37rem; }
 
-.fifth { background: no-repeat url("../images/Livello_3.png"); width: 100%; height: 790px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-direction: column; flex-direction: column; }
+.gallery-img:nth-child(2) { padding-right: 2.4rem; }
 
-.fifth h5 { color: #fff; font-size: 24px; font-weight: 700; text-transform: uppercase; letter-spacing: 3.6px; }
-
-.fifth .email-input { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; }
-
-.fifth .email-input input { width: 280px; height: 60px; border-radius: 3px 0 0 3px; background-color: #ffffff; border: #fff; padding: 0; }
-
-.fifth .email-input button { width: 63px; height: 60px; border-radius: 0 3px 3px 0; background-color: #16a085; border: #16a085; padding: 0; }
-
-.fifth .email-input i { color: #fff; font-size: 20px; }
-
-.fifth .email-input input:-ms-input-placeholder { color: #373737; font-size: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 2.4px; padding-left: 22px; }
-
-.fifth .email-input input::placeholder { color: #373737; font-size: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 2.4px; padding-left: 22px; }
-
-.sixth { background: #f5f6f7; height: 396px; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
-
-.sixth h1 { color: #373737; font-size: 20px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 0; }
-
-.sixth h2 { color: #373737; text-align: center; font-size: 12px; font-weight: 500; line-height: 22px; text-transform: uppercase; letter-spacing: 1.8px; margin-bottom: 0; margin-top: 16px; }
-
-.sixth .buttons { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: center; justify-content: center; margin-top: 47px; }
-
-.sixth .buttons .store { width: 240px; height: 56px; border-radius: 3px 0 0 3px; background-color: #1abc9c; color: white; border: #1abc9c; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.4px; }
-
-.sixth .buttons .icon-store { width: 56px; height: 56px; border-radius: 0 3px 3px 0; background-color: #16a085; border: #16a085; }
-
-.sixth .buttons i { color: #fff; font-size: 24px; }
-
-.sixth .buttons button:nth-child(2) { margin-right: 26px; }
+.gallery .arrows { position: absolute; top: 9.5rem; right: 13rem; }
