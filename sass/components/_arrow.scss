@@ -1,7 +1,8 @@
 .arrow {
-	font-size: 30px;
+	font-size: 1.3rem;
+	letter-spacing: 0.25rem;
 	text-decoration: none;
-	line-height: 20px;
+	line-height: 2rem;
 	transition: .2s;
 	&:hover {
 	color: $color-green;
