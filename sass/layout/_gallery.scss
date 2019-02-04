@@ -12,13 +12,14 @@
 	&_text-box {
 		display: flex;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: center;
 		flex-direction: column;
 		color: $color-grey-light;
+
 		.gallery_heading {			
 			font-family: Gotham Rounded;
-			font-family: 1.8rem;
-			line-height: 2rem;
+			font-size: 1.6rem;
+			line-height: 1rem;
 			text-transform: uppercase;
 			letter-spacing: .24rem;
 			margin-top: 2rem;
@@ -33,13 +34,14 @@
 	}
 	
 	&-img {
-		height: 24rem;
-		width: 37rem;
+		img:first-child {
+			padding-right: 2.5rem;
+		}
 	}
 
-	&-img:nth-child(2) {
-			padding-right: 2.4rem;
-	}
+//height: 24rem;
+//width: 37rem;
+
 	.arrows {
 		position: absolute;
 		top: 9.5rem;

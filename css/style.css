@@ -90,14 +90,12 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .gallery { padding: 0 13rem; background-color: #F5F6F7; display: flex; flex-direction: row; justify-content: space-between; align-items: center; height: 48.3rem; position: relative; }
 
-.gallery_text-box { display: flex; align-items: center; justify-content: flex-start; flex-direction: column; color: #373737; }
+.gallery_text-box { display: flex; align-items: center; justify-content: center; flex-direction: column; color: #373737; }
 
-.gallery_text-box .gallery_heading { font-family: Gotham Rounded; font-family: 1.8rem; line-height: 2rem; text-transform: uppercase; letter-spacing: .24rem; margin-top: 2rem; }
+.gallery_text-box .gallery_heading { font-family: Gotham Rounded; font-size: 1.6rem; line-height: 1rem; text-transform: uppercase; letter-spacing: .24rem; margin-top: 2rem; }
 
 .gallery_text-box .gallery_paragraph { font-size: 1rem; font-family: Gotham Rounded Medium; letter-spacing: .15rem; text-align: center; margin-top: 1.3rem; }
 
-.gallery-img { height: 24rem; width: 37rem; }
-
-.gallery-img:nth-child(2) { padding-right: 2.4rem; }
+.gallery-img img:first-child { padding-right: 2.5rem; }
 
 .gallery .arrows { position: absolute; top: 9.5rem; right: 13rem; }
