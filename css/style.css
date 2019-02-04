@@ -32,6 +32,12 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .heading_secondary--sub { display: block; color: #373737; font-family: Gotham Rounded Book; font-size: 1.2rem; font-weight: 400; line-height: 2.4rem; letter-spacing: 1.8px; margin-bottom: 3rem; }
 
+.heading_footer { color: #495057; font-size: 1.2rem; font-weight: 500; line-height: 2.2rem; letter-spacing: .18rem; }
+
+.heading_footer--main { display: block; text-transform: uppercase; }
+
+.heading_footer--sub { display: block; }
+
 .u-center-text { text-align: center !important; }
 
 .btn, .btn:link, .btn:visited { text-align: center; text-transform: uppercase; border-radius: .3rem; text-decoration: none; border: none; cursor: pointer; font-size: 1.2rem; font-weight: 700; letter-spacing: .18rem; position: relative; display: inline-block; }
@@ -133,3 +139,5 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 .download_buttons-div { display: flex; align-items: center; justify-content: space-between; }
 
 .download_buttons-div:first-child { margin-right: 3rem; }
+
+footer { display: flex; align-items: center; justify-content: space-between; background: #fff; height: 13.4rem; }
