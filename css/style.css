@@ -72,15 +72,15 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .header_text-box { display: flex; justify-content: center; align-items: center; }
 
-.second { background: no-repeat url("../images/second.png"); background-color: #F5F6F7; min-height: 100vh; height: 47rem; justify-content: center; }
+.second { background-color: #F5F6F7; height: 49rem; justify-content: flex-start; position: relative; overflow: hidden; display: flex; }
 
-.second_text-box { display: flex; flex-direction: column; justify-content: center; padding-top: 13rem; }
+.second_text-box { display: flex; padding-left: 11rem; padding-top: 11rem; }
 
-.second_img { position: absolute; top: 50; }
+.second_img { position: absolute; right: 13rem; top: 7.6rem; }
 
 .third { display: flex; flex-direction: row; justify-content: flex-end; background: #fff; height: 51rem; overflow: hidden; }
 
-.third_img { display: flex; height: 100%; display: block; position: absolute; left: 13rem; top: 145rem; }
+.third_img { display: flex; height: 100%; display: block; position: absolute; left: 13rem; top: 128rem; }
 
 .third_text-box { display: flex; padding-top: 14.5rem; padding-right: 8.5rem; }
 
