@@ -1,48 +1,58 @@
-.fifth {
+.subscribe {
 	background: no-repeat url("../images/Livello_3.png");
-	width: 100%;
-	height: 790px;
+	height: 79rem;
+	background-size: cover;
+	min-height: 100vh;
+	background-position: left center;
+	
+	//position bcg img in the centre, no margins
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	h5 {
-		color: #fff;
-		font-size: 24px;
+
+	&_heading {
+		color: $color-white;
+		font-size: 2.4rem;
 		font-weight: 700;
 		text-transform: uppercase;
-		letter-spacing: 3.6px;
+		letter-spacing: .4rem;
+		margin-bottom: 2rem;
 	}
-	.email-input {
+
+	&_form {
 		display: flex;
 		flex-direction: row;
 		input {
-			width: 280px;
-			height: 60px;
-			border-radius: 3px 0 0 3px;
-			background-color: #ffffff;
-			border: #fff;
-			padding: 0;
+			width: 28rem;
+			height: 6rem;
+			border-radius: .3rem 0 0 .3rem;
+			background-color: $color-white;
+			border: $color-white;
 		}
-		button {
-			width: 63px;
-			height: 60px;
-			border-radius: 0 3px 3px 0;
-			background-color: #16a085;
-			border: #16a085;
-			padding: 0;
+		a {
+			width: 6.3rem;
+			height: 6rem;
+			border-radius: 0 .3rem .3rem 0;
+			background-color: $color-green;
+			border: $color-green;
+			color: $color-white;
+			font-size: 2rem;
+			text-decoration: none;
+
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
 		}
-		i {
-			color: #fff;
-			font-size: 20px;
-		}
+		
 		input::placeholder {
-			color: #373737;
-			font-size: 16px;
-			font-weight: 500;
+			color: #495057;
+			font-weight: 700;
+			font-size: 1.6rem;
 			text-transform: uppercase;
-			letter-spacing: 2.4px;
-			padding-left: 22px;
+			letter-spacing: .22rem;
+			padding-left: 2.2rem;
+			line-height: 1.5rem;
 		}
 	}
 }

@@ -99,3 +99,15 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 .gallery-img img:first-child { padding-right: 2.5rem; }
 
 .gallery .arrows { position: absolute; top: 9.5rem; right: 13rem; }
+
+.subscribe { background: no-repeat url("../images/Livello_3.png"); height: 79rem; background-size: cover; min-height: 100vh; background-position: left center; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+
+.subscribe_heading { color: #fff; font-size: 2.4rem; font-weight: 700; text-transform: uppercase; letter-spacing: .4rem; margin-bottom: 2rem; }
+
+.subscribe_form { display: flex; flex-direction: row; }
+
+.subscribe_form input { width: 28rem; height: 6rem; border-radius: .3rem 0 0 .3rem; background-color: #fff; border: #fff; }
+
+.subscribe_form a { width: 6.3rem; height: 6rem; border-radius: 0 .3rem .3rem 0; background-color: #159f85; border: #159f85; color: #fff; font-size: 2rem; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
+
+.subscribe_form input::placeholder { color: #495057; font-weight: 700; font-size: 1.6rem; text-transform: uppercase; letter-spacing: .22rem; padding-left: 2.2rem; line-height: 1.5rem; }
