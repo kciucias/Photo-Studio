@@ -60,3 +60,42 @@
         box-shadow: 0 .5rem 1rem rgba($color-black,.2);
     }
 }	
+
+.btn-store {
+    width: 24rem;
+    height: 5rem;
+    background-color: $color-green-light;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+    a {
+        color: $color-white;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        font-size: 1.4rem;
+        line-height: 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.btn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $color-green;
+    width: 5rem;
+    height: 5rem;
+    a {
+        color: $color-white;
+        font-weight: bold;
+        letter-spacing: 0.2rem;
+        font-size: 1.8rem;
+        line-height: 1.5rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
