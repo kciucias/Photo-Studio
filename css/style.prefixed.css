@@ -16,6 +16,8 @@
 
 html { box-sizing: border-box; font-size: 62.5%; }
 
+@media only screen and (max-width: 68.75rem) { html { font-size: 50%; } }
+
 body { font-family: Gotham Rounded; line-height: 1.6; }
 
 *, *::after, *::before { margin: 0; padding: 0; box-sizing: inherit; }
@@ -90,11 +92,11 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .second_text-box { display: -ms-flexbox; display: flex; padding-left: 11rem; padding-top: 11rem; }
 
-.second_img { position: absolute; right: 13rem; top: 7.6rem; }
+.second_img { width: 100%; height: auto; position: absolute; right: 13rem; top: 7.6rem; }
 
 .third { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; background: #fff; height: 51rem; overflow: hidden; }
 
-.third_img { display: -ms-flexbox; display: flex; height: 100%; display: block; position: absolute; left: 13rem; top: 128rem; }
+.third_img { width: 100%; height: auto; display: -ms-flexbox; display: flex; position: absolute; left: 13rem; top: 128rem; }
 
 .third_text-box { display: -ms-flexbox; display: flex; padding-top: 14.5rem; padding-right: 8.5rem; }
 
@@ -102,9 +104,11 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .third_text-box .arrow:hover { text-decoration: none; }
 
-.gallery { padding: 0 13rem; background-color: #F5F6F7; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; height: 48.3rem; position: relative; }
+.gallery_container { background-color: #F5F6F7; height: 48.3rem; position: relative; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; }
 
-.gallery_text-box { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; -ms-flex-direction: column; flex-direction: column; color: #373737; }
+.gallery { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; -ms-flex-align: center; align-items: center; }
+
+.gallery_text-box { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; -ms-flex-direction: column; flex-direction: column; color: #373737; padding-right: 3rem; }
 
 .gallery_text-box .gallery_heading { font-family: Gotham Rounded; font-size: 1.6rem; line-height: 1rem; text-transform: uppercase; letter-spacing: .24rem; margin-top: 2rem; }
 

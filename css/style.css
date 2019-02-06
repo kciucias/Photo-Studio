@@ -16,6 +16,8 @@
 
 html { box-sizing: border-box; font-size: 62.5%; }
 
+@media only screen and (max-width: 68.75rem) { html { font-size: 50%; } }
+
 body { font-family: Gotham Rounded; line-height: 1.6; }
 
 *, *::after, *::before { margin: 0; padding: 0; box-sizing: inherit; }
@@ -90,11 +92,11 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .second_text-box { display: flex; padding-left: 11rem; padding-top: 11rem; }
 
-.second_img { position: absolute; right: 13rem; top: 7.6rem; }
+.second_img { width: 100%; height: auto; position: absolute; right: 13rem; top: 7.6rem; }
 
 .third { display: flex; flex-direction: row; justify-content: flex-end; background: #fff; height: 51rem; overflow: hidden; }
 
-.third_img { display: flex; height: 100%; display: block; position: absolute; left: 13rem; top: 128rem; }
+.third_img { width: 100%; height: auto; display: flex; position: absolute; left: 13rem; top: 128rem; }
 
 .third_text-box { display: flex; padding-top: 14.5rem; padding-right: 8.5rem; }
 
@@ -102,9 +104,11 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .third_text-box .arrow:hover { text-decoration: none; }
 
-.gallery { padding: 0 13rem; background-color: #F5F6F7; display: flex; flex-direction: row; justify-content: space-between; align-items: center; height: 48.3rem; position: relative; }
+.gallery_container { background-color: #F5F6F7; height: 48.3rem; position: relative; display: flex; align-items: center; }
 
-.gallery_text-box { display: flex; align-items: center; justify-content: center; flex-direction: column; color: #373737; }
+.gallery { display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+
+.gallery_text-box { display: flex; align-items: center; justify-content: center; flex-direction: column; color: #373737; padding-right: 3rem; }
 
 .gallery_text-box .gallery_heading { font-family: Gotham Rounded; font-size: 1.6rem; line-height: 1rem; text-transform: uppercase; letter-spacing: .24rem; margin-top: 2rem; }
 

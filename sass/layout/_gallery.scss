@@ -1,13 +1,20 @@
-.gallery {
-	padding: 0 13rem;
+
+.gallery_container {
 	background-color: $color-grey-bcg;
+	height: 48.3rem;
+	position: relative;
+
+	display: flex;
+	align-items: center;
+}
+
+.gallery {
+	//padding: 0 13rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 
-	height: 48.3rem;
-	position: relative;
 
 	&_text-box {
 		display: flex;
@@ -15,6 +22,7 @@
 		justify-content: center;
 		flex-direction: column;
 		color: $color-grey-light;
+		padding-right: 3rem;
 
 		.gallery_heading {			
 			font-family: Gotham Rounded;
@@ -36,6 +44,12 @@
 	&-img {
 		img:first-child {
 			padding-right: 2.5rem;
+		}
+		img {
+			//max-width: 100%;
+			//height: 24rem;
+			//width: 37rem;
+			//height: auto;
 		}
 	}
 
