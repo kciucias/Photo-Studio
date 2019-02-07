@@ -1,10 +1,14 @@
-.subscribe {
+.subscribe-container {
 	background: no-repeat url("../images/Livello_3.png");
-	height: 79rem;
 	background-size: cover;
 	min-height: 100vh;
-	background-position: left center;
+	background-position: left center
+}
+
+.subscribe {
 	
+	height: 79rem;
+
 	//position bcg img in the centre, no margins
 	display: flex;
 	justify-content: center;

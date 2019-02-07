@@ -1,21 +1,22 @@
-.second {
+.second_container {
 	background-color: $color-grey-bcg;
-	height: 49rem;
+}
+
+.second {
+	display: flex;
 	justify-content: flex-start;
+
 	position: relative;
 	overflow: hidden;
-	display: flex;
- 
+
 	&_text-box {
 		display: flex;
-		padding-left: 11rem;
-		padding-top: 11rem;
+		padding-top: 11rem;	
 	}
+
 	&_img {
-		width: 100%;
-		height: auto;
 		position: absolute;
-		right: 13rem;
-		top: 7.6rem;
+		right: 0;
+		top: 9.4rem;
 	}
 }

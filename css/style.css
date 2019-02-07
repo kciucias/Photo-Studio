@@ -22,7 +22,7 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 *, *::after, *::before { margin: 0; padding: 0; box-sizing: inherit; }
 
-.flex-container { max-width: 102.4rem; margin: 0 auto; }
+.container { max-width: 102.4rem; width: 100%; margin: 0 auto; padding: 4rem 2rem; }
 
 .heading_primary { color: #fff; text-align: center; }
 
@@ -72,15 +72,17 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .arrow_right { padding-left: 1.3rem; }
 
-.header { display: flex; flex-direction: column; justify-content: space-between; background: no-repeat url("../images/background.png"); background-size: cover; min-height: 100vh; background-position: center bottom; }
+.header { display: flex; flex-direction: column; justify-content: space-between; background: no-repeat url("../images/background.png"); background-size: cover; background-position: center bottom; min-height: 100vh; }
 
 .header nav { display: flex; justify-content: center; padding-top: 4.2rem; }
 
-.header nav ul { display: flex; align-items: center; justify-content: space-between; flex-basis: 77rem; }
+.header nav ul { display: flex; flex-basis: 100rem; align-items: center; justify-content: space-between; }
 
 .header nav ul li { display: flex; list-style: none; }
 
-.header nav ul li a { color: #fff; font-weight: 700; text-transform: uppercase; letter-spacing: .24rem; text-decoration: none; font-size: 1rem; }
+.header nav ul li a { color: #fff; font-weight: 700; text-transform: uppercase; letter-spacing: .24rem; text-decoration: none; font-size: 1.6rem; font-family: Gotham Rounded; }
+
+.header nav ul li a:hover { color: #159f85; transition: color .2s; }
 
 .header_icons { display: flex; justify-content: center; padding-bottom: 2rem; font-size: 2.2rem; color: #fff; }
 
@@ -88,37 +90,41 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .header_text-box { display: flex; justify-content: center; align-items: center; }
 
-.second { background-color: #F5F6F7; height: 49rem; justify-content: flex-start; position: relative; overflow: hidden; display: flex; }
+.second_container { background-color: #F5F6F7; }
 
-.second_text-box { display: flex; padding-left: 11rem; padding-top: 11rem; }
+.second { display: flex; justify-content: flex-start; position: relative; overflow: hidden; }
 
-.second_img { width: 100%; height: auto; position: absolute; right: 13rem; top: 7.6rem; }
+.second_text-box { display: flex; padding-top: 11rem; }
 
-.third { display: flex; flex-direction: row; justify-content: flex-end; background: #fff; height: 51rem; overflow: hidden; }
+.second_img { position: absolute; right: 0; top: 9.4rem; }
 
-.third_img { width: 100%; height: auto; display: flex; position: absolute; left: 13rem; top: 128rem; }
+.third { display: flex; flex-direction: row; justify-content: flex-start; background: #fff; margin-top: 15rem; overflow: hidden; position: relative; }
 
-.third_text-box { display: flex; padding-top: 14.5rem; padding-right: 8.5rem; }
+.third_img { display: flex; position: relative; margin-bottom: -20rem; }
+
+.third_text-box { display: flex; padding-left: 25rem; }
 
 .third_text-box .arrow { font-size: 30px; color: #000; text-decoration: none; line-height: 20px; transition: .2s; }
 
 .third_text-box .arrow:hover { text-decoration: none; }
 
-.gallery_container { background-color: #F5F6F7; height: 48.3rem; position: relative; display: flex; align-items: center; }
+.gallery_container { background-color: #F5F6F7; }
 
-.gallery { display: flex; flex-direction: row; justify-content: space-between; align-items: center; }
+.gallery { display: flex; flex-direction: row; justify-content: center; align-items: center; position: relative; padding: 12rem 0; }
 
-.gallery_text-box { display: flex; align-items: center; justify-content: center; flex-direction: column; color: #373737; padding-right: 3rem; }
+.gallery_text-box { display: flex; align-items: center; justify-content: center; flex-direction: column; color: #373737; padding-right: 2rem; }
 
 .gallery_text-box .gallery_heading { font-family: Gotham Rounded; font-size: 1.6rem; line-height: 1rem; text-transform: uppercase; letter-spacing: .24rem; margin-top: 2rem; }
 
 .gallery_text-box .gallery_paragraph { font-size: 1rem; font-family: Gotham Rounded Medium; letter-spacing: .15rem; text-align: center; margin-top: 1.3rem; }
 
-.gallery-img img:first-child { padding-right: 2.5rem; }
+.gallery img:first-child { padding-right: 1rem; }
 
 .gallery .arrows { position: absolute; top: 9.5rem; right: 13rem; }
 
-.subscribe { background: no-repeat url("../images/Livello_3.png"); height: 79rem; background-size: cover; min-height: 100vh; background-position: left center; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+.subscribe-container { background: no-repeat url("../images/Livello_3.png"); background-size: cover; min-height: 100vh; background-position: left center; }
+
+.subscribe { height: 79rem; display: flex; justify-content: center; align-items: center; flex-direction: column; }
 
 .subscribe_heading { color: #fff; font-size: 2.4rem; font-weight: 700; text-transform: uppercase; letter-spacing: .4rem; margin-bottom: 2rem; }
 
@@ -130,7 +136,9 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .subscribe_form input::placeholder { color: #495057; font-weight: 700; font-size: 1.6rem; text-transform: uppercase; letter-spacing: .22rem; padding-left: 2.2rem; line-height: 1.5rem; }
 
-.download { background: #F5F6F7; height: 39.6rem; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.download-container { background: #F5F6F7; }
+
+.download { height: 39.6rem; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 
 .download_text-box { display: flex; justify-content: center; align-items: center; flex-direction: column; }
 
@@ -144,4 +152,4 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 .download_buttons-div:first-child { margin-right: 3rem; }
 
-footer { display: flex; align-items: center; justify-content: space-between; background: #fff; height: 13.4rem; }
+.footer { display: flex; align-items: center; justify-content: space-between; background: #fff; height: 13.4rem; }

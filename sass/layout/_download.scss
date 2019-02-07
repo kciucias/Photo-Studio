@@ -1,7 +1,9 @@
-.download {
+.download-container {
 	background: $color-grey-bcg;
-	height: 39.6rem;
+}
 
+.download {
+	height: 39.6rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

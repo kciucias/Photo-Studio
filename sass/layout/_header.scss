@@ -5,18 +5,20 @@
 
 	background: no-repeat url("../images/background.png");
 	background-size: cover;
-	min-height: 100vh;
-	// top -> to center the image!
 	background-position: center bottom;
+	min-height: 100vh;
+
 	nav {
 		display: flex;
 		justify-content: center;
 		padding-top: 4.2rem;
+
 		ul {
 			display: flex;
+			flex-basis: 100rem;
 			align-items: center;
 			justify-content: space-between;
-			flex-basis: 77rem;
+
 			li {
 			display: flex;
 			list-style: none;
@@ -26,7 +28,12 @@
 					text-transform: uppercase;
 					letter-spacing: .24rem;
 					text-decoration: none;
-					font-size: 1rem;
+					font-size: 1.6rem;
+					font-family: Gotham Rounded;
+				}
+				a:hover {
+					color: $color-green;
+					transition: color .2s;
 				}
 			}
 		}

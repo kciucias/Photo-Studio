@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>New design</title>
+	<title>--Photo Studio--</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://use.fontawesome.com/1364834378.css">
@@ -9,75 +9,81 @@
 </head>
 
 <body>
-	<header class="header">
-		
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Photoapp</a></li>
-				<img class="header_logo" src="./images/Livello_2.png" alt="logo">
-				<li><a href="#">Design</a></li>
-				<li><a href="#">Download</a></li>
-			</ul>
-		</nav>
+	<!--header-->
+	<header class="header">	
 
-		<div class="header_text-box">
-			<h1 class="heading_primary">
-				<span class="heading_primary--main">your life , a photo</span>
-				<span class="heading_primary--sub">print your life in a simple photo</span>
-				<a href="#" class="btn btn--primary btn--green btn--animate">Get started</a>
-			</h1>
-		</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Photoapp</a></li>
+					<img class="header_logo" src="./images/Livello_2.png" alt="logo">
+					<li><a href="#">Design</a></li>
+					<li><a href="#">Download</a></li>
+				</ul>
+			</nav>
 
-		<div class="header_icons">
-			<i class="icon-btn fa fa-twitter"></i>
-			<i class="icon-btn fa fa-flickr"></i>
-			<i class="icon-btn fa fa-dribbble"></i>
-		</div>
+			<div class="header_text-box">
+				<h1 class="heading_primary">
+					<span class="heading_primary--main">your life , a photo</span>
+					<span class="heading_primary--sub">print your life in a simple photo</span>
+					<a href="#" class="btn btn--primary btn--green btn--animate">Get started</a>
+				</h1>
+			</div>
 
+			<div class="header_icons">
+				<i class="icon-btn fa fa-twitter"></i>
+				<i class="icon-btn fa fa-flickr"></i>
+				<i class="icon-btn fa fa-dribbble"></i>
+			</div>
 	</header>
+	<!--end of header-->
 
-	<section class="second">
-		<img src="../images/hand-phone.jpg" class="second_img" alt="phone">
-		<div class="second_text-box">
-			<h2 class="heading_secondary">
-				<span class="heading_secondary--main">Rapresent your life with a<br>simple photo</span>
-				<span class="heading_secondary--sub">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua. Ut <strong class="strong">enim ad minim</strong> veniam, quis<br> nostrud exercitation ullamco laboris nisi<br> ut aliquip ex ea commodo consequat.
-				</span>
-				<a href="#" class="btn btn--secondary btn--green btn--animate">Get started</a>
-			</h2>	
+	<section class="second_container">
+		<div class="container second">
+			<div class="second_text-box">
+				<h2 class="heading_secondary">
+					<span class="heading_secondary--main">Rapresent your life with a<br>simple photo</span>
+					<span class="heading_secondary--sub">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua. Ut <strong class="strong">enim ad minim</strong> veniam, quis<br> nostrud exercitation ullamco laboris nisi<br> ut aliquip ex ea commodo consequat.
+					</span>
+					<a href="#" class="btn btn--secondary btn--green btn--animate">Get started</a>
+				</h2>	
+			</div>
+			<img src="../images/hand-phone.jpg" class="second_img" alt="phone">
 		</div>
 	</section>
 
 
-	<section class="third">
-		<div class="third_img">
-			<img src="./images/Flat_iPhone_5C_Mock_Up.png" alt="phone">
+	<section class="third-container">
+		<div class="container third">
+			<div class="third-div">
+				<img src="./images/Flat_iPhone_5C_Mock_Up.png" alt="phone" class="third_img">
+			</div>
+
+			<div class="third_text-box">
+				<h2 class="heading_secondary">
+					<span class="heading_secondary--main">design</span>
+					<span class="heading_secondary--sub">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+						sed do eiusmod tempor incididunt ut labore et dolore<br>
+						magna aliqua. Ut <strong>enim ad minim </strong>veniam, quis<br>
+						nostrud exercitation ullamco laboris nisi<br>
+						ut aliquip ex ea commodo consequat.
+					</span>
+					<a href="#" class="btn btn--secondary btn--green btn--animate">learn more</a>
+					<div class="arrows">
+				    	<h4>11/05</h4>
+				        <a href="#" class="arrow arrow-left"><</a>
+				        <a href="#" class="arrow arrow-right">></a>
+				    </div>
+				</h2>
+			</div>
 		</div>		
-		<div class="third_text-box">
-			<h2 class="heading_secondary">
-				<span class="heading_secondary--main">design</span>
-				<span class="heading_secondary--sub">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
-					sed do eiusmod tempor incididunt ut labore et dolore<br>
-					magna aliqua. Ut <strong>enim ad minim </strong>veniam, quis<br>
-					nostrud exercitation ullamco laboris nisi<br>
-					ut aliquip ex ea commodo consequat.
-				</span>
-				<a href="#" class="btn btn--secondary btn--green btn--animate">learn more</a>
-				<div class="arrows">
-			    	<h4>11/05</h4>
-			        <a href="#" class="arrow arrow-left"><</a>
-			        <a href="#" class="arrow arrow-right">></a>
-			    </div>
-			</h2>
-		</div>
 	</section>
 
 
 	<section class="gallery_container">
-		<div class="flex-container gallery">
+		<div class="container gallery">
 			<div class="arrows">
 		        <a href="#" class="arrow arrow-left"><</a>
 		        <a href="#" class="arrow arrow-right">></a>
@@ -95,52 +101,58 @@
 	</section>
 	
 
-	<section class="subscribe">		
-		<h3 class="subscribe_heading">subscribe to us community</h3>
-		<form action="#" class="subscribe_form">
-	        <input type="email" placeholder="Your email">
-	        <a href="#" class="fa fa-check"></a>
-	    </form>
-	</section>
-
-
-	<section class="download">
-		<div class="download_text-box">
-			<h3>Download it</h3>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>laboris nisi ut aliquip ex ea commodo consequat.
-			</p>
-		</div>
-
-		<div class="download_buttons">
-			<div class="download_buttons-div">
-				<div class="btn-store">
-					<a href="#" class="btn-store--link">Apple store</a>
-				</div>
-				<div class="btn-icon">
-					<a href="#" class="btn-icon--link fa fa-apple"></a>
-				</div>
-			</div>
-
-			<div class="download_buttons-div">
-				<div class="btn-store">
-					<a href="#" class="btn-store--link">Play store</a>
-				</div>
-				<div class="btn-icon">
-					<a href="#" class="btn-icon--link fa fa-android"></a>
-				</div>
-			</div>
+	<section class="subscribe-container">
+		<div class="container subscribe">	
+			<h3 class="subscribe_heading">subscribe to us community</h3>
+			<form action="#" class="subscribe_form">
+		        <input type="email" placeholder="Your email">
+		        <a href="#" class="fa fa-check"></a>
+		    </form>
 		</div>
 	</section>
 
-	<footer class="flex-container">
-    	<div class="footer_text-box">
-    		<h3 class="heading_footer">
-	        	<span class="heading_footer--main">Credits | Privacy | Our Teams</span>
-	        	<span class="heading_footer--sub">Copyright by phototime &mdash; all right reserved</span>
-        	</h3>
-      	</div>
-        <img src="./images/Livello_2_copia.png" class="footer_img" alt="logo">
+
+	<section class="download-container">
+		<div class="container download">
+			<div class="download_text-box">
+				<h3>Download it</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br>labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+
+			<div class="download_buttons">
+				<div class="download_buttons-div">
+					<div class="btn-store">
+						<a href="#" class="btn-store--link">Apple store</a>
+					</div>
+					<div class="btn-icon">
+						<a href="#" class="btn-icon--link fa fa-apple"></a>
+					</div>
+				</div>
+
+				<div class="download_buttons-div">
+					<div class="btn-store">
+						<a href="#" class="btn-store--link">Play store</a>
+					</div>
+					<div class="btn-icon">
+						<a href="#" class="btn-icon--link fa fa-android"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container footer">
+	    	<div class="footer_text-box">
+	    		<h3 class="heading_footer">
+		        	<span class="heading_footer--main">Credits | Privacy | Our Teams</span>
+		        	<span class="heading_footer--sub">Copyright by phototime &mdash; all right reserved</span>
+	        	</h3>
+	      	</div>
+	        <img src="./images/Livello_2_copia.png" class="footer_img" alt="logo">
+	    </div>
    </footer>
 
 </body>

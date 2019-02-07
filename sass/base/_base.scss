@@ -21,9 +21,11 @@ body {
     box-sizing: inherit;
 }
 
-.flex-container {
+.container {
     max-width: 102.4rem;
+    width: 100%; 
     margin: 0 auto;
+    padding: 4rem 2rem;
 }
 
 

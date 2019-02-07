@@ -1,27 +1,30 @@
 .third {
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
+	justify-content: flex-start;
 
 	background: $color-white;
-	height: 51rem;
+	margin-top: 15rem;
 	overflow: hidden;
+	position: relative;
+	&_div {
+
+	}
 	
 	&_img {
-		width: 100%;
-		height: auto;
-
 		display: flex;
 
-		position: absolute;
-		left: 13rem;
-		top: 128rem;
+		//width: 100%;
+		//height: auto;
+		//display: flex;
+		position: relative;
+		margin-bottom: -20rem;
 	}
 
 	&_text-box {
 		display: flex;
-		padding-top: 14.5rem;
-		padding-right: 8.5rem;
+		padding-left: 25rem;
+
 		.arrow {
 			font-size: 30px;
 			color: #000;
