@@ -6,3 +6,11 @@
     height: 13.4rem;
 }
 
+@media only screen and (max-width: $bp-smaller) {
+    .footer {
+        justify-content: center;
+        &_img {
+        	display: none;
+        }
+    }  
+}

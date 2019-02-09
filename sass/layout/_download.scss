@@ -3,7 +3,7 @@
 }
 
 .download {
-	height: 39.6rem;
+	//height: 39.6rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -51,9 +51,23 @@
 	}
 }
 
+@media only screen and (max-width: $bp-small){
+	.download_buttons {
+		
+	}
+	.download_text-box {
+		width: 80%;
+	}
+}
 
-
-
-
-
-
+@media only screen and (max-width: $bp-smaller) {
+	.download_buttons {
+		flex-direction: column;
+		&-div {
+			justify-content: flex-start;
+		}
+	}
+	.download_text-box {
+		width: 70%;
+	}	
+}

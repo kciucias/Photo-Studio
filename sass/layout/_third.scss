@@ -59,4 +59,17 @@
 	}
 }
 
+@media only screen and (max-width: $bp-smaller){
+	.third {
+		justify-content: center;
+		align-items: center;
+		&_img {
+			display: none;
+		}
+		&_text-box {
+			padding-left: 0;
+		}
+	}
+	
+}
 
