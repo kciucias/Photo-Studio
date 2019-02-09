@@ -1,13 +1,12 @@
 .subscribe-container {
 	background: no-repeat url("../images/Livello_3.png");
 	background-size: cover;
-	min-height: 100vh;
 	background-position: left center
 }
 
 .subscribe {
 	
-	height: 79rem;
+	height: 100vh;
 
 	//position bcg img in the centre, no margins
 	display: flex;
@@ -58,6 +57,17 @@
 			padding-left: 2.2rem;
 			line-height: 1.5rem;
 		}
+	}
+}
+@media only screen and (max-width: $bp-large){
+	.subscribe {
+		height: 85vh;
+	}
+}
+
+@media only screen and (max-width: $bp-small){
+	.subscribe {
+		height: 55vh;
 	}
 }
 

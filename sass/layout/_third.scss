@@ -7,9 +7,6 @@
 	margin-top: 15rem;
 	overflow: hidden;
 	position: relative;
-	&_div {
-
-	}
 	
 	&_img {
 		display: flex;
@@ -37,3 +34,29 @@
 		}
 	}
 }
+
+/*
+@media only screen and (max-width: $bp-small){
+	.third_text-box {
+		padding-left: 10rem;
+	}
+}
+*/
+
+@media only screen and (max-width: $bp-large){
+	.third_text-box {
+		flex-basis: 60%;
+		padding-left: 10rem;
+	}
+}
+
+@media only screen and (max-width: $bp-small){
+	.third {
+		margin-top: 5rem;
+	}
+	.third_img {
+		margin-bottom: -40rem;
+	}
+}
+
+

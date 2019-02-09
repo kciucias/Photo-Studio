@@ -6,7 +6,7 @@
 	background: no-repeat url("../images/background.png");
 	background-size: cover;
 	background-position: center bottom;
-	min-height: 100vh;
+	height: 100vh;
 
 	nav {
 		display: flex;
@@ -57,4 +57,16 @@
 		align-items: center;
 	}
 
+}
+
+@media only screen and (max-width: $bp-large){
+	.header {
+		height: 85vh;
+	}
+}
+
+@media only screen and (max-width: $bp-small){
+	.header {
+		height: 65vh;
+	}
 }
