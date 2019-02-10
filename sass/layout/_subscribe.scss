@@ -4,10 +4,8 @@
 	background-position: left center
 }
 
-.subscribe {
-	
+.subscribe {	
 	height: 100vh;
-
 	//position bcg img in the centre, no margins
 	display: flex;
 	justify-content: center;
@@ -59,6 +57,7 @@
 		}
 	}
 }
+
 @media only screen and (max-width: $bp-large){
 	.subscribe {
 		height: 85vh;
@@ -67,7 +66,7 @@
 
 @media only screen and (max-width: $bp-small){
 	.subscribe {
-		height: 55vh;
+		height: 30vh;
 	}
 }
 

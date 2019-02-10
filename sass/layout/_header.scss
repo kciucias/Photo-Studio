@@ -8,6 +8,22 @@
 	background-position: center bottom;
 	height: 100vh;
 
+	.burger-icon {
+		background: url(../images/hamburger.png) no-repeat 100% center;
+        height: 3.1rem;
+        width: 4rem;
+        cursor: pointer;
+
+		position: absolute;
+		right: 1rem;
+		top: 1rem;
+
+		padding-right: 1rem;
+		padding-top: 1rem;
+		display: none;
+	}
+
+
 	nav {
 		display: flex;
 		justify-content: center;
@@ -68,5 +84,56 @@
 @media only screen and (max-width: $bp-small){
 	.header {
 		height: 65vh;
+	}
+}
+
+
+// HAMBURGER MENU
+@media only screen and (max-width: $bp-hamburger){
+	
+	.header {
+		height: 40vh;
+		justify-content: center;
+		.burger-icon {display: block;}
+
+		&_icons {
+			padding-top: 6rem;
+		}
+
+		nav {
+		position: absolute;
+		display: block;
+		padding-top: 0;
+		top: 1rem;
+		right: 0;
+			img {
+				display: none;
+			}
+			ul {
+				height: 0;
+				overflow: hidden;	
+			}
+			ul.open {
+				height: auto;
+				margin-top: 3.1rem;
+				margin-left: 13rem;
+				padding-left: 1rem;
+				border-radius: .4rem;
+				
+				background-color: $color-green;
+				
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-end;				
+			}
+
+			li {
+				padding-top: 1rem;
+				padding-right: 1rem;				
+			}
+			li:last-child {
+				padding-bottom: 1rem;
+			}
+		}
 	}
 }

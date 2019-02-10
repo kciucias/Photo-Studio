@@ -3,7 +3,6 @@
 }
 
 .download {
-	//height: 39.6rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -52,22 +51,26 @@
 }
 
 @media only screen and (max-width: $bp-small){
-	.download_buttons {
-		
-	}
-	.download_text-box {
-		width: 80%;
+	
+	.download {
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-left: 6rem;
+
+		&_text-box {
+			width: 80%;
+			align-items: flex-start;
+			p {
+				text-align: left;
+			} 
+		}
+		&_buttons {
+			justify-content: flex-start;
+			flex-direction: column;
+			&-div {
+				justify-content: flex-start;
+			}
+		} 
 	}
 }
 
-@media only screen and (max-width: $bp-smaller) {
-	.download_buttons {
-		flex-direction: column;
-		&-div {
-			justify-content: flex-start;
-		}
-	}
-	.download_text-box {
-		width: 70%;
-	}	
-}

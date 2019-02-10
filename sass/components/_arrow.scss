@@ -4,9 +4,10 @@
 	text-decoration: none;
 	line-height: 2rem;
 	transition: .2s;
+	padding-top: 1rem;
 	&:hover {
-	color: $color-green;
-	text-decoration: none;
+		color: $color-green;
+		text-decoration: none;
 	}
 	&_right {
 		padding-left: 1.3rem;

@@ -1,16 +1,17 @@
 $(document).ready (function() {
     
+    /*
     new WOW().init();
+    */
     
-    
-    $(".burger-icon").on("click", function(){
+    $(".burger-nav").on("click", function(){
         
-        $(".header nav ul").toggleClass("open");
+        $(".container nav ul").toggleClass("open");
         
     });
     
     
-  /*
+    /*
     
    $('.js-wp-2').waypoint(function(direction) {
        
@@ -29,13 +30,13 @@ $(document).ready (function() {
 	});
     
    
+   */ 
+    
+    
+    //$(".iphone-btn").delay(2300).animate( {bottom: "+=-3"}, 300);
+    //$(".iphone-btn").delay(300).animate( {top: "+=-3"}, 100);
     
     
     
-    $(".iphone-btn").delay(2300).animate( {bottom: "+=-3"}, 300);
-    $(".iphone-btn").delay(300).animate( {top: "+=-3"}, 100);
-    
-    
- */   
     
 });

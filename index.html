@@ -10,21 +10,21 @@
 
 <body>
 	<!--header-->
-	<header class="header">	
-
+	<header class="header" id="home">	
+			<a class="burger-icon"></a>	
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Photoapp</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#photoapp">Photoapp</a></li>
 					<img class="header_logo" src="./images/Livello_2.png" alt="logo">
-					<li><a href="#">Design</a></li>
-					<li><a href="#">Download</a></li>
+					<li><a href="#design">Design</a></li>
+					<li><a href="#download">Download</a></li>
 				</ul>
 			</nav>
 
 			<div class="header_text-box">
 				<h1 class="heading_primary">
-					<span class="heading_primary--main">your life , a photo</span>
+					<span class="heading_primary--main">your life, a photo</span>
 					<span class="heading_primary--sub">print your life in a simple photo</span>
 					<a href="#" class="btn btn--primary btn--green btn--animate">Get started</a>
 				</h1>
@@ -38,7 +38,7 @@
 	</header>
 	<!--end of header-->
 
-	<section class="second_container">
+	<section class="second_container" id="photoapp">
 		<div class="container second">
 			<div class="second_text-box">
 				<h2 class="heading_secondary">
@@ -54,7 +54,7 @@
 	</section>
 
 
-	<section class="third-container">
+	<section class="third-container" id="design">
 		<div class="container third">
 			<div class="third-div">
 				<img src="./images/Flat_iPhone_5C_Mock_Up.png" alt="phone" class="third_img">
@@ -121,7 +121,7 @@
 				</p>
 			</div>
 
-			<div class="download_buttons">
+			<div class="download_buttons" id="download">
 				<div class="download_buttons-div">
 					<div class="btn-store">
 						<a href="#" class="btn-store--link">Apple store</a>
@@ -154,6 +154,12 @@
 	        <img src="./images/Livello_2_copia.png" class="footer_img" alt="logo">
 	    </div>
    </footer>
+
+<!-- Jquery first, then JavaScript -->
+        <script src="js/jquery-3.1.0.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/script.js"></script>
 
 </body>
 </html>
