@@ -6,6 +6,10 @@
 
 @font-face { font-family: 'Gotham Rounded Medium'; src: url(../vendor/GothamRounded-Medium.otf); }
 
+.js-iphone { opacity: 0; }
+
+.js-iphone.animated { opacity: 1; }
+
 html { box-sizing: border-box; font-size: 62.5%; }
 
 @media only screen and (max-width: 68.75rem) { html { font-size: 56.25%; } }
@@ -37,8 +41,6 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 .heading_footer--main { display: block; text-transform: uppercase; }
 
 .heading_footer--sub { display: block; }
-
-.u-center-text { text-align: center !important; }
 
 .btn, .btn:link, .btn:visited { text-align: center; text-transform: uppercase; border-radius: .3rem; text-decoration: none; border: none; cursor: pointer; font-size: 1.2rem; font-weight: 700; letter-spacing: .18rem; position: relative; display: inline-block; }
 
@@ -96,7 +98,7 @@ body { font-family: Gotham Rounded; line-height: 1.6; }
 
 @media only screen and (max-width: 49.25rem) { .header { height: 65vh; } }
 
-@media only screen and (max-width: 33.43rem) { .header { height: 40vh; justify-content: center; }
+@media only screen and (max-width: 33.43rem) { .header { height: 50vh; justify-content: center; }
   .header .burger-icon { display: block; }
   .header_icons { padding-top: 6rem; }
   .header nav { position: absolute; display: block; padding-top: 0; top: 1rem; right: 0; }
